@@ -773,4 +773,10 @@ address {
   fill: #ffffff;
   margin-left: 10px;
 }
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*# sourceMappingURL=main.css.map */
