@@ -1,0 +1,23 @@
+.work-list {
+	display: flex;
+	justify-content: space-between;
+
+	.item {
+		position: relative;
+		margin-bottom: 94px;
+	}
+	.title {
+		position: absolute;
+		transform: translateY(-100%);
+		color: $primary-white-color;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.14;
+		text-transform: uppercase;
+		background: rgba(47, 48, 58, 0.8);
+		width: 370px;
+		padding-top: 27px;
+		padding-bottom: 27px;
+		text-align: center;
+	}
+}
