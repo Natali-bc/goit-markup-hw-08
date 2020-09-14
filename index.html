@@ -18,43 +18,54 @@
 		<!--Шапка сайта-->
 		<header class="header">
 			<div class="container">
-				<nav class="navigation">
-					<a href="/" class="logo" lang="en">
-						Web
-						<span class="accent-black">Studio</span>
-					</a>
-					<ul class="site-nav">
-						<li class="site-nav-item"><a href="./index.html" class="link current">Студия</a></li>
-						<li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-						<li class="site-nav-item"><a href="" class="link">Контакты</a></li>
-					</ul>
-				</nav>
-				<address>
-					<ul class="contacts">
-						<li class="item">
-							<a href="mailto:info@devstudio.com" class="mail link current">
-								<svg class="mail-svg">
-									<use href="./images/sprite.svg#envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li>
-							<a href="tel:+380961111111" class="phone link current">
-								<svg class="phone-svg">
-									<use href="./images/sprite.svg#smartphone"></use>
-								</svg>
-								+38 096 111 11 11
-							</a>
-						</li>
-					</ul>
-				</address>
+				<a href="/" class="logo" lang="en">
+					Web
+					<span class="accent-black">Studio</span>
+				</a>
+				<button class="burger-btn">
+					<svg width="40" height="40">
+						<use class="open-menu-icon" href="./images/sprite.svg#open-menu"></use>
+						<use class="close-menu-icon" href="./images/sprite.svg#close-menu"></use>
+					</svg>
+				</button>
+				<div class="header-menu">
+					<nav class="navigation">
+						<ul class="site-nav">
+							<li class="site-nav-item"><a href="./index.html" class="link current">Студия</a></li>
+							<li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+							<li class="site-nav-item"><a href="" class="link">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header-utils">
+						<address class="address">
+							<ul class="contacts">
+								<li class="item">
+									<a href="mailto:info@devstudio.com" class="mail link current">
+										<svg class="mail-svg" width="16" height="11">
+											<use href="./images/sprite.svg#envelope"></use>
+										</svg>
+										info@devstudio.com
+									</a>
+								</li>
+								<li>
+									<a href="tel:+380961111111" class="phone link current">
+										<svg class="phone-svg" width="10" height="15">
+											<use href="./images/sprite.svg#smartphone"></use>
+										</svg>
+										+38 096 111 11 11
+									</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+				</div>
 			</div>
 		</header>
+
 		<main>
 			<!-- Герой -->
 
-			<section class="hero overlay">
+			<!-- <section class="hero overlay">
 				<div class="container">
 					<h1 class="hero-title">
 						ЭФФЕКТИВНЫЕ РЕШЕНИЯ
@@ -63,10 +74,10 @@
 					</h1>
 					<button data-modal-open type="button" class="button">Заказать услугу</button>
 				</div>
-			</section>
+			</section> -->
 
 			<!--Наши преимущества-->
-			<section class="feature-section">
+			<!-- <section class="feature-section">
 				<div class="container">
 					<h2 hidden class="section-title">Наши преимущества</h2>
 					<ul class="feature-list">
@@ -90,10 +101,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!--Чем мы занимаемся-->
-			<section class="section">
+			<!-- <section class="section">
 				<div class="container">
 					<h2 class="section-title">Чем мы занимаемся</h2>
 					<ul class="work-list">
@@ -114,10 +125,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!--Наша команда-->
-			<section class="team-section">
+			<!-- <section class="team-section">
 				<div class="container">
 					<h2 class="section-title">Наша команда</h2>
 					<ul class="team">
@@ -278,10 +289,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Постоянные клиенты -->
-			<section class="section">
+			<!-- <section class="section">
 				<div class="container">
 					<h2 class="section-title">Постоянные клиенты</h2>
 					<ul class="clients-list">
@@ -329,11 +340,11 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 		</main>
 
 		<!-- Футер -->
-		<footer class="footer">
+		<!-- <footer class="footer">
 			<div class="container">
 				<div class="footer-item">
 					<a href="/" class="logo">
@@ -400,8 +411,8 @@
 					</form>
 				</div>
 			</div>
-		</footer>
-
+		</footer> -->
+		<!-- 
 		<div class="backdrop is-hidden" data-modal>
 			<div class="pop-up">
 				<div class="modal">
@@ -459,8 +470,9 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
