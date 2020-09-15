@@ -546,8 +546,12 @@ address {
     line-height: 1.44;
     text-align: center;
     margin-bottom: 50px;
-    padding-top: 94px;
   }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
@@ -556,7 +560,7 @@ address {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
-  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .team .name {
@@ -583,6 +587,7 @@ address {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 
 .social-list {
@@ -618,6 +623,49 @@ address {
     padding-right: 74px;
     padding-bottom: 24px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
+  .team-descr {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+  }
+  .team-section .item {
+    width: calc((100% - 30px) / 2);
+  }
+  .team-section .item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    display: flex;
+  }
+  .team .item {
+    width: calc((100% - 90px) / 4);
+    text-align: center;
+  }
+  .team .team-descr {
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-bottom: 94px;
+  }
+  .team .section-title {
+    font-size: 36px;
+    line-height: 1.44;
+  }
+  .team .item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
