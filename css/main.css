@@ -827,6 +827,10 @@ address {
   align-items: center;
 }
 
+.footer-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer-form {
   padding-top: 20px;
 }
