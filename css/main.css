@@ -425,6 +425,7 @@ address {
     content: "";
     position: absolute;
     display: block;
+    right: 45%;
     margin-top: 28px;
     background-color: #2196f3;
     width: 48px;
@@ -489,6 +490,10 @@ address {
   .contacts .item {
     margin-bottom: 10px;
   }
+}
+
+.site-nav-item .current::after {
+  margin-top: 8px;
 }
 
 @media screen and (min-width: 1200px) {

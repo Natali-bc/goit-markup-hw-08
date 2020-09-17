@@ -93,6 +93,8 @@
 }
 @media screen and (min-width: 768px) {
   .portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 94px;
     margin: 0 -15px;
   }   
@@ -105,4 +107,18 @@
       margin-bottom: 30px;
   }
   
+}
+@media screen and (min-width: 1200px) {
+
+  .portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+  }   
+.portfolio-section-item:nth-child(3n) {
+	margin-right: 0;
+}
+.portfolio-section-item:nth-last-child(-n + 3) {
+	margin-bottom: 0;
+}
+
 }
