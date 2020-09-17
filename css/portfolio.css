@@ -503,7 +503,7 @@ address {
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
+  .footer.logo {
     padding-left: 115px;
   }
   .footer .container {
@@ -541,7 +541,10 @@ address {
   .footer .container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    align-items: baseline;
+  }
+  .footer-container {
+    margin-right: 93px;
   }
   .footer-join {
     color: #ffffff;
@@ -572,16 +575,22 @@ address {
   .footer-contacts {
     padding-left: 0;
   }
-  .logo {
+  .footer.logo {
     padding-left: 0;
   }
   .footer-wrapper {
-    display: flex;
     margin: 0;
     text-align: left;
   }
   .footer-btn {
     margin: 0;
+  }
+  .footer-form {
+    display: flex;
+    padding: 0;
+  }
+  .footer-social-list {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
