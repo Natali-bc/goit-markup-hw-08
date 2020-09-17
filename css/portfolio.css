@@ -501,4 +501,58 @@ address {
     margin-right: 0;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-left: 115px;
+  }
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-item {
+    margin-right: 165px;
+  }
+  .footer-wrapper {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer-nav {
+    text-align: center;
+  }
+  .location {
+    padding-left: 76px;
+  }
+  .footer-contacts {
+    padding-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer-join {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .footer-join .footer-list-item {
+    width: calc((50% - 45px) / 2);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-item {
+    margin-right: 70px;
+  }
+}
 /*# sourceMappingURL=portfolio.css.map */
