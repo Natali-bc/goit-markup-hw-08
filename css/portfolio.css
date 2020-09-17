@@ -138,7 +138,6 @@ address {
     width: 40px;
     height: 40px;
     position: relative;
-    z-index: 1;
   }
   .burger-btn:hover, .burger-btn:focus {
     fill: #2196f3;
