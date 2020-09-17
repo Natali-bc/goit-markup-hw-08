@@ -516,6 +516,7 @@ address {
   .footer-wrapper {
     display: block;
     margin: 0 auto;
+    text-align: center;
   }
   .footer-nav {
     text-align: center;
@@ -525,6 +526,14 @@ address {
   }
   .footer-contacts {
     padding-left: 76px;
+  }
+  .footer-btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-input {
+    margin-bottom: 20px;
   }
 }
 
@@ -553,6 +562,26 @@ address {
   }
   .footer-item {
     margin-right: 70px;
+  }
+  .footer-nav {
+    text-align: left;
+  }
+  .location {
+    padding-left: 0;
+  }
+  .footer-contacts {
+    padding-left: 0;
+  }
+  .logo {
+    padding-left: 0;
+  }
+  .footer-wrapper {
+    display: flex;
+    margin: 0;
+    text-align: left;
+  }
+  .footer-btn {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
