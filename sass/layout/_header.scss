@@ -134,6 +134,27 @@
 			color: $accent-color;
 		}
 	}
+	.site-nav-item .current::after {
+			content: "";
+			position: absolute;
+			display: block;
+			margin-top: 28px;
+			background-color: $accent-color;
+			width: 48px;
+			height: 4px;
+			border-radius: 2px;
+		}
+		.site-nav-item .portfolio.current::after {
+			content: "";
+			position: absolute;
+			display: block;
+			margin-top: 28px;
+			background-color: $accent-color;
+			width: 78px;
+			height: 4px;
+			border-radius: 2px;
+
+		}
 	.site-nav-item:not(:last-child) {
 		margin-bottom: 40px;
 	}

@@ -198,6 +198,26 @@ address {
   .contacts .link:hover, .contacts .link:focus {
     color: #2196f3;
   }
+  .site-nav-item .current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 28px;
+    background-color: #2196f3;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+  }
+  .site-nav-item .portfolio.current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 28px;
+    background-color: #2196f3;
+    width: 78px;
+    height: 4px;
+    border-radius: 2px;
+  }
   .site-nav-item:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -351,6 +371,191 @@ address {
     fill: #757575;
     margin-right: 10 px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.projects .btn {
+  background-color: #f5f4fa;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 8px;
+  border: 0;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.projects .btn:hover,
+.projects .btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.projects .btn.current {
+  background-color: #2196f3;
+  color: #ffffff;
+  width: 73px;
+  height: 38px;
+}
+
+.projects .btn.site {
+  width: 128px;
+  height: 38px;
+}
+
+.projects .btn.app {
+  width: 145px;
+  height: 38px;
+}
+
+.projects .btn.design {
+  width: 103px;
+  height: 38px;
+}
+
+.projects .btn.marketing {
+  width: 130px;
+  height: 38px;
+}
+
+@media screen and (max-width: 767px) {
+  ul.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: left;
+    margin-bottom: 40px;
+  }
+  .projects-container {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .projects .item:nth-child(-n+2) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  ul.projects {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  ul.projects {
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+}
+
+.hover-overlay {
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 294px;
+  visibility: hidden;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-box {
+  display: block;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-box:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-section {
+  padding-bottom: 94px;
+  margin: -15px;
+}
+
+.portfolio-section .title-list {
+  color: #212121;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-section .list {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.portfolio-section-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-section-item:hover .hover-overlay,
+.portfolio-section-item:focus .hover-overlay {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.portfolio-list {
+  height: 110px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.portfolio-list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.descrpt {
+  position: relative;
+  height: 294px;
+  overflow: hidden;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.56;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-section {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-bottom: 94px;
+    margin: 0 -15px;
+  }
+  .portfolio-section-item {
+    margin: 0 15px;
+    width: 354px;
+  }
+  .portfolio-section-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
